@@ -26,8 +26,10 @@ WIN_MESSAGE = "축하합니다, 이겼습니다!"
 LOSE_MESSAGE = "아쉽네요, 졌습니다."
 DRAW_MESSAGE = "비겼습니다."
 
+
 def get_result_message(bot, result):
     return f"봇이 {bot}를 냈습니다. \n {result}"
+
 
 def get_rps_result(bot, player):
     if player == bot:
@@ -64,6 +66,7 @@ def get_menu(message):
             ], key=lambda x: x.label, reverse=False)
         )
     )
+
 
 @add_skill(r'[가위|바위|보]')
 def get_lunch(message):
